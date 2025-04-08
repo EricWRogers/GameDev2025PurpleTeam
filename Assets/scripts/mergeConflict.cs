@@ -12,5 +12,6 @@ public class MergeConflict : MonoBehaviour
     void Update()
     {
         Debug.Log("Update");
+        Debug.Log("hi");
     }
 }
