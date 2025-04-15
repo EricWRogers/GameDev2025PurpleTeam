@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MicInput : MonoBehaviour
 
-{
+{   [Range(0.0f, 1.0f)]
     public float MicLoudness;
 
         private string _device;
