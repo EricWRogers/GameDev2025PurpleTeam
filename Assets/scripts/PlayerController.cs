@@ -1,4 +1,4 @@
-using UnityEditor.Callbacks;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -16,12 +16,13 @@ public class PlayerController : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
     }
  
-    private void Update()
+    private void FixedUpdate()
     {
         body.linearVelocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.linearVelocity.y);
  
         if (Input.GetKey(KeyCode.Space) && isGrounded())
             body.AddForce(new Vector2(body.linearVelocity.x,jump));
+            StartCoroutine(JumpCooldown());
     }
 
 
@@ -37,6 +38,14 @@ public class PlayerController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position-transform.up * castDistinace, boxsize );
+    }
+
+    private IEnumerator JumpCooldown()
+    {
+        isJumping = true;
+        yield return new WaitForSeconds(0.4f);
+        isJumping = false;
+        Debug.Log("done");
     }
     //  private void OnCollisionEnter2D(Collision2D other)
     // {
