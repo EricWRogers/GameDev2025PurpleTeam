@@ -4,6 +4,7 @@ public class EnemyPatrol : MonoBehaviour
 {
     public GameObject pointA;
     public GameObject pointB;
+    public GameObject deathUI;
     private Rigidbody2D rd;
     private Transform currentPoint;
     public float speed;
@@ -28,6 +29,14 @@ public class EnemyPatrol : MonoBehaviour
         }
         if(Vector2.Distance(transform.position, currentPoint.position)< 0.5f && currentPoint == pointA.transform){
             currentPoint = pointB.transform;
+        }
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player"){
+        deathUI.SetActive(true);
+        Time.timeScale = 0f;
+
         }
     }
     private void OnDrawGizmos()
