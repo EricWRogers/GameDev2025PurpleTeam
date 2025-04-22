@@ -13,4 +13,11 @@ public class Bullet : MonoBehaviour
         transform.Translate((transform.forward * speed * Time.deltaTime));
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+         if(collision.gameObject.CompareTag("Enemy")){
+            Destroy(collision.gameObject);
+         }
+    }
+
 }
