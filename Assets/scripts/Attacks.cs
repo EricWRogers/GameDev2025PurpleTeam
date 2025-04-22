@@ -23,10 +23,9 @@ public class Attacks : MonoBehaviour
         }
 
 
-        while (Input.GetButtonDown("Fire2"))
+        ##while (Input.GetButtonDown("Fire2"))
         {
            
-
         }
     }
 
