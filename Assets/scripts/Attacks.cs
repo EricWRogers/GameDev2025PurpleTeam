@@ -19,7 +19,15 @@ public class Attacks : MonoBehaviour
 
             // Give the cloned object an initial velocity along the current
             // object's Z axis
-            clone.linearVelocity = transform.TransformDirection(Vector3.forward * 10);
+            clone.linearVelocity = transform.TransformDirection(Vector3.right * 10);
+        }
+
+
+        while (Input.GetButtonDown("Fire2"))
+        {
+           
+
         }
     }
+
 }
