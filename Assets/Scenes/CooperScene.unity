@@ -628,7 +628,7 @@ Transform:
   m_GameObject: {fileID: 759632784}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.85, y: -1.63, z: 0.040824227}
+  m_LocalPosition: {x: 9.98, y: -1.63, z: 0.040824227}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1241,7 +1241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58ecf57181074c4ebf43e8972d965a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: CooperScene
+  sceneName: Level1
 --- !u!70 &1812121225
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1689,10 +1689,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5156137587949794499, guid: b27a1737a25a3444a9bcdf31dcc02322, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -3461661865393920182, guid: 275f2c8567c0bcd4c95e04a7ce80278e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

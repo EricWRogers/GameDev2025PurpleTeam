@@ -406,21 +406,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658014530642234149}
     m_Modifications:
-    - target: {fileID: 2896578066032898779, guid: 0b6c946b9957a304fb17b0c70b1f21e8, type: 3}
-      propertyPath: m_Radius
-      value: 2.17
-      objectReference: {fileID: 0}
     - target: {fileID: 3897539733044835805, guid: 0b6c946b9957a304fb17b0c70b1f21e8, type: 3}
       propertyPath: m_Name
       value: AOE Attack
       objectReference: {fileID: 0}
-    - target: {fileID: 8414426251127006503, guid: 0b6c946b9957a304fb17b0c70b1f21e8, type: 3}
-      propertyPath: m_LocalScale.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8414426251127006503, guid: 0b6c946b9957a304fb17b0c70b1f21e8, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
+    - target: {fileID: 3897539733044835805, guid: 0b6c946b9957a304fb17b0c70b1f21e8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8414426251127006503, guid: 0b6c946b9957a304fb17b0c70b1f21e8, type: 3}
       propertyPath: m_LocalPosition.x

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8414426251127006503}
   - component: {fileID: 544435588176073017}
   - component: {fileID: 2896578066032898779}
+  - component: {fileID: 1423350637985791101}
   m_Layer: 0
   m_Name: AOE Attack
   m_TagString: Untagged
@@ -26,9 +27,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3897539733044835805}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.01, y: -0.03, z: 0}
-  m_LocalScale: {x: 0.37789553, y: 0.3881985, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -123,4 +124,18 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 6.68
+  m_Radius: 2.17
+--- !u!114 &1423350637985791101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3897539733044835805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62903e9888e64814fb77c901679f6490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 0}
+  speed: 20
