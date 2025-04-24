@@ -467,48 +467,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433204693}
   m_CullTransparentMesh: 1
---- !u!1 &441670186 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4203422148673500497, guid: bb953ae0ad5737041b5769c5666bd2d8, type: 3}
-  m_PrefabInstance: {fileID: 1565082268}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &441670187
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441670186}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.026077418, y: -0.16803172}
-  m_Size: {x: 10.310112, y: 13.82492}
-  m_Direction: 0
 --- !u!1 &469221816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,14 +1205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile Attack
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -219538759059895799, guid: bb953ae0ad5737041b5769c5666bd2d8, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4203422148673500497, guid: bb953ae0ad5737041b5769c5666bd2d8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 441670187}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb953ae0ad5737041b5769c5666bd2d8, type: 3}
 --- !u!1 &1812121223
 GameObject:
@@ -1735,6 +1689,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5156137587949794499, guid: b27a1737a25a3444a9bcdf31dcc02322, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3461661865393920182, guid: 275f2c8567c0bcd4c95e04a7ce80278e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

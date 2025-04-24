@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 8844876296334059994}
   - component: {fileID: 6218330579018908162}
   - component: {fileID: -4970316859535670455}
-  - component: {fileID: -219538759059895799}
+  - component: {fileID: 341219100202556038}
+  - component: {fileID: 5611505901409911571}
   m_Layer: 0
   m_Name: Projectile Attack
   m_TagString: Untagged
@@ -131,8 +132,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &-219538759059895799
-BoxCollider2D:
+--- !u!70 &341219100202556038
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -161,19 +162,23 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 20.48, y: 20.48}
-    newSize: {x: 20.48, y: 20.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 20.48, y: 20.48}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.026077418, y: -0.16803172}
+  m_Size: {x: 10.310112, y: 13.82492}
+  m_Direction: 0
+--- !u!114 &5611505901409911571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4203422148673500497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37dd78327ea6f2b4f8e20dfbe78a0b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTime: 2
