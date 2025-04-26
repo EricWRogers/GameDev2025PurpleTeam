@@ -103,12 +103,12 @@ TextureImporter:
       name: banshee_idle_0
       rect:
         serializedVersion: 2
-        x: 117
-        y: 189
-        width: 1512
-        height: 1763
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 118
+        y: 190
+        width: 1510
+        height: 1761
+      alignment: 9
+      pivot: {x: 0.6526809, y: 0.47683996}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 70db32c66ce28de499fc2dfc556a691b
     internalID: 0
     vertices: []
     indices: 
