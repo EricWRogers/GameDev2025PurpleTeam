@@ -9,6 +9,8 @@ public class Pausemenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+    public string sceneName;
+    public string restartName;
 
     // Update is called once per frame
     void Update()
@@ -43,12 +45,17 @@ public class Pausemenu : MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("CooperScene");
+        SceneManager.LoadScene(sceneName);
     }
     public void QuitGame()
     {
         Debug.Log("Sucks at the game");
         Application.Quit();
+    }
+    public void Restart()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(restartName);
     }
 
 }
