@@ -3700,7 +3700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 149523281}
-  sceneName: CooperScene
+  sceneName: MainMenu
   restartName: Level1
 --- !u!114 &1372236609
 MonoBehaviour:
@@ -5169,7 +5169,7 @@ Transform:
   m_GameObject: {fileID: 1670214013}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.73, y: 7.71, z: 0.4444709}
+  m_LocalPosition: {x: -22.73, y: 7.05, z: 0.4444709}
   m_LocalScale: {x: 4.4622183, y: 1.7663531, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
