@@ -38,7 +38,11 @@ public class EnemyPatrol : MonoBehaviour
         Time.timeScale = 0f;
 
         }
+         if(collision.tag == "Barrier"){
+            Destroy(gameObject);
+         }
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(pointA.transform.position, 0.5f);
