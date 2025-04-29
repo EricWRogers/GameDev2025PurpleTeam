@@ -1,9 +1,14 @@
 using UnityEngine;
+using System.Collections;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 public class MicInput : MonoBehaviour
-
-{   [Range(0.0f, 1.0f)]
+{
+    [Range(0.0f, 1.0f)]
     public float MicLoudness;
+    public List<float> loudnessBuffer;
 
         private string _device;
       
@@ -71,7 +76,8 @@ public class MicInput : MonoBehaviour
       
       
         // make sure the mic gets started & stopped when application gets focused
-        void OnApplicationFocus(bool focus) {
+        void OnApplicationFocus(bool focus) 
+        {
             if (focus)
             {
                 //Debug.Log("Focus");
@@ -91,4 +97,17 @@ public class MicInput : MonoBehaviour
               
             }
         }
+
+        void FixedUpdate()
+        {
+        System.Collections.Generic.List<double> a = new System.Collections.Generic.List<double>();
+        //double average = a.Average(loudnessBuffer);
+        loudnessBuffer.Add(MicLoudness);
+        if (loudnessBuffer.Count > 26)
+        {
+            loudnessBuffer.RemoveAt(0);
+        }
+
+        }
+
 }
