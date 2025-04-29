@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MicLoudness: 0
+  loudnessBuffer: []
 --- !u!212 &490436433
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -319,8 +320,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8333953855880761397, guid: b27a1737a25a3444a9bcdf31dcc02322, type: 3}
-      propertyPath: m_Enabled
+    - target: {fileID: 4769531996429776081, guid: b27a1737a25a3444a9bcdf31dcc02322, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

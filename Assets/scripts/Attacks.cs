@@ -7,6 +7,8 @@ public class Attacks : MonoBehaviour
 {
     // Assign a Rigidbody component in the inspector to instantiate
     public GameObject bulletPrefab;
+    public GameObject aoeAttack;
+
 
     void Update()
     {
@@ -23,9 +25,13 @@ public class Attacks : MonoBehaviour
         }
 
 
-        //while (Input.GetButtonDown("Fire2"))
+        if (Input.GetButton("Fire2"))
         {
-           
+           aoeAttack.SetActive(true);
+        }
+        else
+        {
+            aoeAttack.SetActive(false);
         }
     }
 
