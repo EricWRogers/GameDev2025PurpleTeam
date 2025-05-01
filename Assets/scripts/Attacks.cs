@@ -8,13 +8,18 @@ public class Attacks : MonoBehaviour
     // Assign a Rigidbody component in the inspector to instantiate
     public GameObject bulletPrefab;
     public GameObject aoeAttack;
+    public MicInput MicInputScript;
+    private float NextFire;
+    
+    float FireRate = 0.5f;
 
 
     void Update()
     {
         // Ctrl was pressed, launch a projectile
-        if (Input.GetButtonDown("Fire1"))
+        if (MicInputScript.average > 0.5f && Time.time > NextFire)
         {
+            NextFire = Time.time + FireRate;
             // Instantiate the projectile at the position and rotation of this transform
             Rigidbody2D clone;
             clone = Instantiate(bulletPrefab, transform.position, transform.rotation).GetComponent<Rigidbody2D>();

@@ -9,6 +9,7 @@ public class MicInput : MonoBehaviour
     [Range(0.0f, 1.0f)]
     public float MicLoudness;
     public List<float> loudnessBuffer;
+    public float average;
 
         private string _device;
       
@@ -100,14 +101,22 @@ public class MicInput : MonoBehaviour
 
         void FixedUpdate()
         {
-        System.Collections.Generic.List<double> a = new System.Collections.Generic.List<double>();
-        //double average = a.Average(loudnessBuffer);
+        
         loudnessBuffer.Add(MicLoudness);
-        if (loudnessBuffer.Count > 26)
+        average = loudnessBuffer.Average();
+        if (loudnessBuffer.Count > 3)
         {
             loudnessBuffer.RemoveAt(0);
         }
 
+        }
+
+        public void clear()
+        {
+            for (int i = 0; i < loudnessBuffer.Count; i++)
+            {
+                loudnessBuffer[i] = 0.0f;
+            }
         }
 
 }
