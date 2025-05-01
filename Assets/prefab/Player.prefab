@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1421451769669762385}
   - component: {fileID: 1048860114648506382}
   - component: {fileID: 6259942877201541902}
+  - component: {fileID: 48773992535523355}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -229,6 +230,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 4203422148673500497, guid: bb953ae0ad5737041b5769c5666bd2d8, type: 3}
   aoeAttack: {fileID: 4769531996429776081}
+  MicInputScript: {fileID: 48773992535523355}
+--- !u!114 &48773992535523355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3191654734573749526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2af8b6411740461408c687c8fe7b04ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MicLoudness: 0
+  loudnessBuffer: []
+  average: 0
 --- !u!1 &6609740564284501292
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,13 +428,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2896578066032898779, guid: 0b6c946b9957a304fb17b0c70b1f21e8, type: 3}
+      propertyPath: m_Radius
+      value: 6.5453777
+      objectReference: {fileID: 0}
+    - target: {fileID: 2896578066032898779, guid: 0b6c946b9957a304fb17b0c70b1f21e8, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.08468628
+      objectReference: {fileID: 0}
     - target: {fileID: 3897539733044835805, guid: 0b6c946b9957a304fb17b0c70b1f21e8, type: 3}
       propertyPath: m_Name
       value: AOE Attack
       objectReference: {fileID: 0}
     - target: {fileID: 3897539733044835805, guid: 0b6c946b9957a304fb17b0c70b1f21e8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8414426251127006503, guid: 0b6c946b9957a304fb17b0c70b1f21e8, type: 3}
       propertyPath: m_LocalScale.x
