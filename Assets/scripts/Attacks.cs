@@ -8,16 +8,18 @@ public class Attacks : MonoBehaviour
     // Assign a Rigidbody component in the inspector to instantiate
     public GameObject bulletPrefab;
     public GameObject aoeAttack;
+    private Vector3 bulletSpawn;
 
 
     void Update()
     {
+        bulletSpawn = new Vector3(1f,0f,0f);
         // Ctrl was pressed, launch a projectile
         if (Input.GetButtonDown("Fire1"))
         {
             // Instantiate the projectile at the position and rotation of this transform
             Rigidbody2D clone;
-            clone = Instantiate(bulletPrefab, transform.position, transform.rotation).GetComponent<Rigidbody2D>();
+            clone = Instantiate(bulletPrefab, transform.position + bulletSpawn, transform.rotation).GetComponent<Rigidbody2D>();
 
             // Give the cloned object an initial velocity along the current
             // object's Z axis
