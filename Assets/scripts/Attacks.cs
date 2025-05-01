@@ -19,7 +19,7 @@ public class Attacks : MonoBehaviour
     {
         bulletSpawn = new Vector3(1f,0f,0f);
         // Ctrl was pressed, launch a projectile
-        if (MicInputScript.average > 0.5f && Time.time > NextFire)
+        if (MicInputScript.average > 0.2f && Time.time > NextFire)
         {
             NextFire = Time.time + FireRate;
             // Instantiate the projectile at the position and rotation of this transform
